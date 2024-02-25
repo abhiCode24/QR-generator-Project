@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+
+body{
+    background-color: #262a2f;
+}
+
+.container{
+    width:400px;
+    padding: 30px 35px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(224, 165, 88);
+}
+
+.container p{
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.container input{
+    padding: 10px 8px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    /* border-radius: 8px; */
+    margin-bottom: 15px;
+    font-size: medium;
+}
+
+.container button{
+    padding: 7px 8px;
+    width: 70%;
+    border-radius: 10px;
+    background-color:rgb(236, 143, 21);
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container button:hover{
+    background-color: rgb(255, 145, 0);;
+}
+
+#Qrbox{
+    width: 200px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 7px black;
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: max-height 2s;
+}
+
+#Qrbox img{
+    width: 100%;
+    padding: 8px;
+}
+
+#Qrbox.showImg{
+    max-height: 300px;
+    margin: 25px auto;
+}
+
+.error{
+    animation: shake 0.2s linear 5;
+}
+
+@keyframes shake {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-2px);
+    }
+    50%{
+        transform: translate(0);
+    }
+    75%{
+        transform: translate(2px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
